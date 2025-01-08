@@ -1,0 +1,13 @@
+h1.text-center.mb-4 Login
+
+= form_with url: sessions_path, method: :post, class: 'w-50 mx-auto' do
+  .mb-3
+    = label_tag :email, "Email", class: 'form-label'
+    = text_field_tag :email, '', class: 'form-control', placeholder: 'Enter your email'
+
+  .mb-3
+    = label_tag :password, "Password", class: 'form-label'
+    = password_field_tag :password, '', class: 'form-control', placeholder: 'Enter your password'
+
+  .text-center
+    = submit_tag "Login", class: 'btn btn-primary w-100'

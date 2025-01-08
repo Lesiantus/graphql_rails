@@ -1,0 +1,5 @@
+- flash.each do |key, message|
+  = content_tag :div, message.html_safe, class: "alert alert-#{key} alert-dismissible fade show", role: "alert" do
+    = message
+    button.close type="button" data-bs-dismiss="alert" aria-label="Close"
+      span aria-hidden="true" &times;

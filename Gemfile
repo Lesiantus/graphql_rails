@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bootsnap', require: false
+gem 'dotenv-rails'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'kamal', require: false
@@ -9,9 +10,11 @@ gem 'propshaft'
 gem 'puma', '>= 5.0'
 gem 'rails', '~> 8.0.1'
 gem 'rubocop-rails'
+gem 'slim-rails'
 gem 'solid_cable'
 gem 'solid_cache'
 gem 'solid_queue'
+gem 'sorcery'
 gem 'stimulus-rails'
 gem 'thruster', require: false
 gem 'turbo-rails'

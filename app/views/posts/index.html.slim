@@ -1,0 +1,13 @@
+.container.mt-4
+  h1.text-center.mb-4 All Posts
+
+  = link_to 'New Post', new_post_path, class: "btn btn-success mb-4"
+
+  - @posts.each do |post|
+    .card.mb-3
+      .card-body
+        h2.card-title
+          = link_to post.title, post_path(post), class: "text-decoration-none"
+        h6.card-subtitle.mb-2.text-muted By #{post.user.email}
+        p.card-text = truncate(post.body, length: 100)
+        = link_to 'Read more', post_path(post), class: "btn btn-primary btn-sm"

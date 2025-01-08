@@ -1,0 +1,17 @@
+h1.text-center.mb-4.mt-5 Register
+
+.container
+  .row.justify-content-center
+    .col-md-6
+      = form_with model: @user, class: "needs-validation", novalidate: true do |f|
+        .mb-3
+          = f.label :email, class: "form-label"
+          = f.email_field :email, class: "form-control", placeholder: "Enter your email"
+        .mb-3
+          = f.label :password, class: "form-label"
+          = f.password_field :password, class: "form-control", placeholder: "Enter your password"
+        .mb-3
+          = f.label :password_confirmation, class: "form-label"
+          = f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm your password"
+        .d-grid.gap-2
+          = f.submit "Register", class: "btn btn-primary btn-block"

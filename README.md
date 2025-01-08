@@ -5,9 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* ruby 3.4.1
 
-* System dependencies
+* rails 8.0.1
 
 * Configuration
 
@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Project, created to learn graphql with rails8
